@@ -1,0 +1,18 @@
+variables:
+  WEBHOME: "/home/gitlab-runner/deploy/jqy/jqymanage-web/"
+
+stages:
+  - build
+  - deploy
+
+build_job:
+  stage: build
+  script: 
+  - echo "git pull..."
+   
+deploy_job:
+  stage: deploy
+  script: 
+  - mkdir -p ${WEBHOME} 
+  - cp -r $PWD/dist/*  ${WEBHOME}
+  - ls -l ${WEBHOME} 

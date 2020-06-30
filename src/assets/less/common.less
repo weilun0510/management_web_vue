@@ -1,0 +1,74 @@
+#app, body, html{
+  height: 100%;
+}
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px !important;
+}
+
+.height100{
+	height: 100%;
+}
+
+// 2020/04/02 by 黄田汉 
+.v-flex{display: flex; align-items: center; justify-content: center;}
+.flex_dom{display: flex;display: -webkit-box;display: -webkit-flex;}
+.flex_column{display: flex;display: -webkit-box;display: -webkit-flex;flex-direction: column;-webkit-flex-direction: column;}
+.flex_1{flex: 1;-webkit-flex:1;display: block;min-width: 0;}
+.flex_2{flex: 2;-webkit-flex:2;display: block;min-width: 0;}
+.flex_3{flex: 3;-webkit-flex:3;display: block;min-width: 0;}
+.flex_4{flex: 4;-webkit-flex:4;display: block;min-width: 0;}
+.flex_5{flex: 5;-webkit-flex:5;display: block;min-width: 0;}
+.flex_item_between{justify-content: space-between;-webkit-justify-content: space-between;}
+.flex_item_around{justify-content: space-around;-webkit-justify-content: space-around;}
+.flex_item_mid{align-items:center;-webkit-align-items: center;}
+.flex_item_stretch{align-items: stretch;-webkit-align-items: stretch;}
+.flex_item_center{ justify-content:center;-webkit-justify-content:center;}
+.flex_wrap{flex-wrap: wrap;-webkit-flex-wrap: wrap;}
+.flex_auto{flex: auto; overflow: hidden;}
+.flex_item_end{justify-content: flex-end;}
+.p18{padding: 18px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mr20{margin-right: 20px;}
+.mr12{margin-right: 12px;}
+.mr18{margin-right: 18px;}
+.mt18{margin-top: 18px;}
+.m18{margin: 18px;}
+
+
+.ov{
+  	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.font-limit-2{
+  	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.sectionTitle{
+	display: flex;
+	justify-content: space-between;
+	.name{
+		font-size: 16px;
+		color: #3C404B;
+		font-weight: 500;
+		&::before{
+			content: '';
+			border-right: 2px solid #0097FE;
+			margin-right: 8px;
+		}
+	}
+	.more{
+		font-size: 12px;
+		color: #666972;
+		cursor: pointer;
+	}
+	.tab-wrap ul[data-v-54017938]{
+		padding: 0;
+	}
+}

@@ -1,0 +1,40 @@
+@import '~@/assets/less/main.less';
+.contentWrap{
+  height: 100%;
+  padding: 18px 18px 0 18px;
+  // background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  .content{
+    background-color: #fff;
+    padding: 32px 24px;
+    .contentTitle{
+      .sc(16px, #308EF3);
+      font-weight: 500;
+    }
+    .uploadImage{
+      .tip{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        .text{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          color: #fff;
+          font-size: 12px;
+          background-color: rgba(8, 9, 9, 0.7);
+        }
+      }
+    }
+  }
+  .btn{
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+  }
+}
