@@ -2,6 +2,7 @@
 
 
 // table columns h
+
 export function operationH(h, params, operations) {
   const actions = operations.map(action => {
     return h('span', [
